@@ -1,0 +1,76 @@
+nav {
+    .navBar {
+        z-index: 10;
+        background-color: black;
+        width: 300px;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+
+
+        .links {
+            color: white;
+            font-weight: bold;
+            margin-left: 30px;
+            margin-top: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .platform--nav {
+            display: flex;
+            flex-direction: column;
+            margin-left: 70px;
+            margin-top: 20px;
+
+            .platform__links {
+                font-size: 15px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .menu {
+        position: absolute;
+        right: 30px;
+        top: 27px;
+        font-size: 22px;
+        color: white;
+    }
+
+    .cross {
+        position: absolute;
+        right: 30px;
+        top: 23px;
+        font-size: 27px;
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        .navBar {
+            float: left;
+            left: 0 !important;
+        }
+
+        .menu {
+            display: none !important;
+        }
+
+        .cross {
+            display: none !important;
+        }
+    }
+}

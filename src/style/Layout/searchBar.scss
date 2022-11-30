@@ -1,0 +1,43 @@
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search {
+    background-color: rgb(41, 40, 40);
+
+    .searchbar {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 50%;
+        height: 30px;
+        border-radius: 50px;
+        padding-left: 40px;
+        background-color: rgb(107, 104, 104);
+        border: none;
+    }
+
+    .searchbar:focus {
+        outline: none;
+        color: black;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .searchBarIcon {
+        position: absolute;
+        left: 30px;
+        top: 28px;
+        color: rgba(255, 255, 255, 0.5);
+        ;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .search {
+        margin-left: 300px;
+
+        .searchbar {
+            margin-left: 50px;
+        }
+    }
+}

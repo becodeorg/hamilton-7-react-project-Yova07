@@ -1,0 +1,65 @@
+.platforms {
+    background-color: rgb(41, 40, 40);
+    padding-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .platforms--Card {
+        width: 90%;
+        max-width: 350px;   
+        height: 350px;
+        background-color: rgb(56, 51, 51);
+        margin: 20px auto;
+        position: relative;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .platforms__title {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 200px;
+            line-height: 4.5;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .popular--games--platform {
+            font-size: 25px;
+            color: white;
+            padding-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .games--link {
+            display: block;
+            color: rgba(255, 255, 255, 0.7);
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .platforms {
+        margin-left: 300px;
+
+        .platforms--Card  {
+            margin-left: 20px 20px!important;
+        }
+    }
+}
